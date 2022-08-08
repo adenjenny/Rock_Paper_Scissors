@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+/* ================= Generelles Styling ================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #db9ba1;
+}
+
+body {
+  background-color: #dbd6d6;
+  font-family: "Russo One", sans-serif;
+}
+h1,
+h2,
+h4 {
+  text-align: center;
+  margin: 1rem 0;
+}
+h1 {
+  color: #262a47;
+  font-size: 3rem;
+}
+/* ================= Styling Hauptbereich ================*/
+section {
+  border: 2px solid #262a47;
+  margin: 2rem 10rem;
+  padding: 0 2rem;
+  min-width: 30%;
+}
+form {
+  text-align: center;
+  margin: 2rem 0;
+}
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.display {
+  display: flex;
+  font-size: 10rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+}
+.images img {
+  width: 15%;
+}
+.images img:hover {
+  animation: tada;
+  /* Einbindung von Animation über HTML */
+  animation-duration: 1s;
+}
+
+/* =================Footer Styling ================*/
+footer {
+  display: flex;
+  justify-content: center;
+}
+#reset {
+  border-radius: 50%;
+  border: 1px solid #262a47;
+  background-color: #dbd6d6;
+  width: 3rem;
+  height: 3rem;
+  animation: turn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+#reset img {
+  width: 2rem;
+}
+
+/* ================= Keyframes und Media Queries ================*/
+
+@keyframes turn {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .display {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+  section {
+    margin: 2rem 10rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .display {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+  section {
+    margin: 2rem 5rem;
+  }
+  .images img {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .display {
+    font-size: 1.5rem;
+    /* padding: 0 1rem; */
+  }
+  section {
+    margin: 2rem 1rem;
+    min-width: 80%;
+    padding: 2.5rem;
+  }
+  .images img {
+    width: 30%;
+  }
+}

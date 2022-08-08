@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <main>
+      <section>
+        <h2>How many rounds?</h2>
+        <form>
+          <input type="radio" id="five" name="rounds" value="5" />
+          <label for="five">5</label>
+          <input type="radio" id="ten" name="rounds" value="10" />
+          <label for="ten">10</label>
+          <input type="radio" id="fifteen" name="rounds" value="15" />
+          <label for="fifteen">15</label>
+          <input type="radio" id="twenty" name="rounds" value="20" />
+          <label for="twenty">20</label>
+        </form>
+      </section>
+      <section class="score">
+        <div>
+          <h3>User</h3>
+        </div>
+        <div class="display">
+          <p id="userDisplay">0</p>
+          <p>:</p>
+          <p id="compDisplay">0</p>
+        </div>
+        <div>
+          <h3>Comp</h3>
+        </div>
+      </section>
+      <section>
+        <h2 id="outputRounds">Let´s play</h2>
+        <div class="images">
+          <img
+            src="./assets/img/button_rock.svg"
+            alt="rock"
+            class="choices"
+            id="rock"
+          />
+          <img
+            src="./assets/img/button_paper.svg"
+            alt="paper"
+            class="choices"
+            id="paper"
+          />
+          <img
+            src="./assets/img/button_scissors.svg"
+            alt="scissors"
+            class="choices"
+            id="scissors"
+          />
+        </div>
+        <h4 id="result">Make your move</h4>
+      </section>
+      <footer>
+        <button id="reset">
+          <img src="./assets/img/button_restart.svg" alt="restart" />
+        </button>
+      </footer>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
